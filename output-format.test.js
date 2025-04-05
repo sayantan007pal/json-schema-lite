@@ -290,7 +290,7 @@ describe("Output Format", () => {
       
       /** @type Json */
       const schema = { $ref: "http://example.org/person" };
-      const instance = {};
+      const instance = "";
       const output = validate(schema, instance);
       
       expect(output.valid).toBe(false);
