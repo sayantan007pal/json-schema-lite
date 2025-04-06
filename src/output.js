@@ -7,7 +7,7 @@ export class Output {
   valid;
   instanceLocation;
   absoluteKeywordLocation;
-  keywordLocation;
+  // keywordLocation;
   errors;
 
   /**
@@ -22,10 +22,10 @@ export class Output {
     this.instanceLocation = instanceNode.location;
 
     // Extract keywordLocation from absoluteKeywordLocation
-    const hashIndex = keywordNode.location.indexOf("#");
-    if (hashIndex !== -1) {
-      this.keywordLocation = keywordNode.location.substring(hashIndex);
-    }
+    // const hashIndex = keywordNode.location.indexOf("#");
+    // if (hashIndex !== -1) {
+    //   this.keywordLocation = keywordNode.location.substring(hashIndex);
+    // }
 
     // Only add errors when validation fails or when errors are explicitly provided
     if (!valid || errors) {
